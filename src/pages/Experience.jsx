@@ -8,10 +8,9 @@ const Experience = () => {
         {/* Intro */}
         <motion.div
           className="text-center"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
         >
           <p className="text-sm uppercase text-orange-500 font-semibold tracking-widest mb-2">
             Aspiring Frontend Developer
@@ -29,10 +28,9 @@ const Experience = () => {
           {/* Experience Item */}
           <motion.div
             className="bg-white shadow-lg rounded-xl p-6 border-l-4 border-orange-500"
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
           >
             <span className="text-sm text-gray-500 font-medium block mb-2">May 2025 – Present</span>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
@@ -49,10 +47,9 @@ const Experience = () => {
           {/* Experience Item */}
           <motion.div
             className="bg-white shadow-lg rounded-xl p-6 border-l-4 border-orange-500"
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
           >
             <span className="text-sm text-gray-500 font-medium block mb-2">Jan 2025 – May 2025</span>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
@@ -68,10 +65,9 @@ const Experience = () => {
           {/* Experience Item */}
           <motion.div
             className="bg-white shadow-lg rounded-xl p-6 border-l-4 border-orange-500"
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
+           initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
           >
             <span className="text-sm text-gray-500 font-medium block mb-2">May 2023 – Jan 2025</span>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">

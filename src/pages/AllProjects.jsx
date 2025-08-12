@@ -28,10 +28,9 @@ const AllProjects = () => {
         {/* Title */}
         <motion.h2
           className="text-center text-4xl md:text-5xl font-extrabold text-gray-800"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
         >
           Featured <span className="text-orange-600">Projects</span>
         </motion.h2>
@@ -42,10 +41,9 @@ const AllProjects = () => {
             <motion.div
               key={index}
               className="bg-gray-100 rounded-lg shadow-lg overflow-hidden group relative hover:shadow-xl transition duration-300"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
-              viewport={{ once: true }}
+              initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
             >
               <div className="h-60 overflow-hidden">
                 <img

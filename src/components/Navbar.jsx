@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router-dom';
 import Index from '../constants/Index';
 
 const Navbar = () => {
@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <header className="bg-white/90 backdrop-blur-md shadow-md fixed top-0 left-0 w-full z-50 border-b border-gray-200 font-sans p-4 flex justify-between items-center">
       
-      <Link to="/" className="text-3xl font-extrabold text-transparent bg-gradient-to-r from-orange-300 to-orange-600 bg-clip-text ">
+      <Link to="/" className="text-3xl font-extrabold text-transparent bg-gradient-to-r from-orange-400 to-orange-700 bg-clip-text ">
         J.EDIDAH
       </Link>
 
@@ -41,7 +41,7 @@ const Navbar = () => {
         ))}
       </nav>
 
-      {/* Hamburger Button (visible on mobile) */}
+     
       <button
         className="md:hidden flex flex-col space-y-1 focus:outline-none"
         onClick={toggleMobileMenu}
@@ -62,8 +62,8 @@ const Navbar = () => {
                 to={path}
                 onClick={closeMobileMenu}
                 className={({ isActive }) =>
-                  `text-base font-medium text-gray-700 hover:text-purple-700 transition ${
-                    isActive ? 'text-purple-700 font-bold' : ''
+                  `text-base font-medium text-gray-700 hover:text-orange-700 transition ${
+                    isActive ? 'text-orange-700 font-bold' : ''
                   }`
                 }
                 end

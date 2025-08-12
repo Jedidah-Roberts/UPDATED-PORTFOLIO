@@ -3,17 +3,19 @@ import about from "../assets/about.png";
 import { motion } from "framer-motion";
 
 const About = () => {
+
   return (
+    
     <section className="bg-white pt-10 pb-16 px-6 min-h-screen font-sans flex items-center">
+      
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-14">
 
         
         <motion.div
           className="md:w-1/2"
-          initial={{ opacity: 0, x: -40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
         >
           <img
             src={about}
@@ -22,13 +24,12 @@ const About = () => {
           />
         </motion.div>
 
-        {/* Text Content */}
+        
         <motion.div
           className="md:w-1/2"
-          initial={{ opacity: 0, x: 40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 0.3 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
         >
           <h4 className="text-orange-500 uppercase font-bold tracking-widest text-sm mb-2">
             My Story
@@ -54,10 +55,15 @@ const About = () => {
 
           
           
+
         </motion.div>
+        
       </div>
+      
     </section>
+    
   );
+  
 };
 
 export default About;

@@ -30,10 +30,9 @@ const Services = () => {
         {/* Section Title */}
         <motion.h2
           className="text-center text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
         >
           DESIGN. <br /> <span className="text-orange-600">BUILD.</span> DELIVER.
         </motion.h2>
@@ -41,19 +40,17 @@ const Services = () => {
         {/* Services List */}
         <motion.div
           className="grid grid-cols-1 md:grid-cols-3 gap-8"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
+         initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
         >
           {services.map((service, index) => (
             <motion.div
               key={index}
               className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center space-y-4 border-t-4 border-orange-500"
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
+             initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
             >
               {service.icon}
               <h3 className="text-xl font-semibold text-gray-800">{service.title}</h3>

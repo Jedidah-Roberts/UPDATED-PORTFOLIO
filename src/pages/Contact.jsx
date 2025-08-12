@@ -10,9 +10,8 @@ const Contact= () => {
         <motion.div
           className="space-y-6"
           initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
         >
           <h2 className="text-4xl font-extrabold text-gray-800 mb-4">
             READY TO <span className="text-orange-600">COLLABORATE?</span>
@@ -51,10 +50,9 @@ const Contact= () => {
         {/* Right: Contact Form */}
         <motion.div
           className="bg-white p-6 rounded-lg shadow-lg"
-          initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
+         initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
         >
           <form
             name="contact"

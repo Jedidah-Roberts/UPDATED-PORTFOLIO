@@ -10,10 +10,9 @@ const Hero = () => {
       <div className="max-w-4xl mx-auto space-y-6">
         {/* Hero Text */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
           className="space-y-3"
         >
           <p className="text-orange-500 font-semibold text-sm uppercase tracking-widest">
@@ -29,10 +28,9 @@ const Hero = () => {
 
         {/* Download Resume Button */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.3 }}
-          viewport={{ once: true }}
+         initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
         >
           <a
             href="/assets/JEDIDAH'S CV.docx"
