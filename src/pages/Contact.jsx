@@ -13,7 +13,7 @@ const Contact = () => {
     <section id="contact" className="bg-gray-50 py-16 px-6 min-h-screen font-sans">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         
-        {/* Left: Contact Info */}
+        
         <motion.div
           className="space-y-6"
           initial={{ opacity: 0, x: -30 }}
@@ -42,7 +42,7 @@ const Contact = () => {
             </p>
           </div>
 
-          {/* Social Links */}
+          
           <div className="flex gap-4 mt-6">
             <a
               href="https://github.com/Jedidah-Roberts"
@@ -69,7 +69,7 @@ const Contact = () => {
           </div>
         </motion.div>
 
-        {/* Right: Contact Form */}
+        
         <motion.div
           className="bg-white p-6 rounded-lg shadow-lg"
           initial={{ opacity: 0, x: -30 }}
@@ -83,7 +83,7 @@ const Contact = () => {
             action="/thank-you"  // Optional: redirect after success
             className="space-y-4"
           >
-            {/* Required for Netlify */}
+            
             <input type="hidden" name="form-name" value="contact" />
 
             <input

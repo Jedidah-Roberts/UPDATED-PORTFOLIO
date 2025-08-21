@@ -9,6 +9,7 @@ import Skills from './pages/Skills';
 import Services from './pages/Services';
 import AllProjects from './pages/AllProjects';
 import Contact from './pages/Contact';
+import ThankYou from './pages/ThankYou';
 
 function App() {
  const router = createBrowserRouter([
@@ -42,6 +43,10 @@ function App() {
         path:"contact",
         element:<Contact/>
       },
+      {
+        path:"thank-you",
+        element:<ThankYou/>
+      }
      
     ]
   }

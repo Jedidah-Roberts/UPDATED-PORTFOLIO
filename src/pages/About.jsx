@@ -13,8 +13,8 @@ const About = () => {
         
         <motion.div
           className="md:w-1/2"
-          initial={{ opacity: 0, x: -30 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
           <img
@@ -27,8 +27,8 @@ const About = () => {
         
         <motion.div
           className="md:w-1/2"
-          initial={{ opacity: 0, x: -30 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
           <h4 className="text-orange-500 uppercase font-bold tracking-widest text-sm mb-2">
