@@ -14,9 +14,9 @@ const LandingPage = () => {
       <Hero/>
        <AllProjects/>
       <About/>
-      <Experience/>
       <Skills/>
       <Services/>
+      <Experience/>
       <Contact/>
       <Footer/>
 

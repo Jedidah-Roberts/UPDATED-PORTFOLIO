@@ -12,11 +12,7 @@ const Index = {
             text: "ABOUT",
             path:"/about",
         },
-        {
-            text: "EXPERIENCE",
-            path:"/experience",
-        },
-        {
+         {
             text: "SKILLS",
             path:"/skills",
         },
@@ -25,6 +21,11 @@ const Index = {
             path:"/services",
         
         },
+        {
+            text: "EXPERIENCE",
+            path:"/experience",
+        },
+       
         
         {
             text: "CONTACT",
