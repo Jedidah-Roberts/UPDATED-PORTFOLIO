@@ -1,26 +1,54 @@
 import { motion } from "framer-motion";
-import { FaCode, FaLaptopCode, FaBugSlash } from "react-icons/fa6";
+import { FaMobileAlt } from "react-icons/fa";
+import {
+  FaCode,
+  FaLaptopCode,
+  FaBugSlash,
+  FaReact,
+  FaServer,
+
+  FaUniversalAccess,
+} from "react-icons/fa6";
 
 const services = [
   {
-    icon: <FaCode size={30} className="text-orange-500" />,
-    title: "Basic HTML/CSS Site Layouts",
+    icon: <FaReact size={30} className="text-orange-500" />,
+    title: "Component-Based UI Development",
     description:
-      "Structuring web content with HTML and styling it with CSS to create visually appealing and easy-to-navigate pages.",
+      "Building scalable and maintainable front-end applications using React, with reusable components and clean state management.",
   },
   {
-    icon: <FaLaptopCode size={30} className="text-orange-500" />,
-    title: "Simple Landing Pages",
+    icon: <FaServer size={30} className="text-orange-500" />,
+    title: "API Integration & Data Fetching",
     description:
-      "Clean, mobile-friendly pages built using HTML and CSS — perfect for personal brands, portfolios, or small businesses starting out online.",
+      "Connecting front-end interfaces to REST APIs and handling asynchronous data with Axios or Fetch for dynamic, data-driven apps.",
+  },
+  {
+    icon: <FaMobileAlt size={30} className="text-orange-500" />,
+    title: "Responsive & Mobile-First Design",
+    description:
+      "Creating fully responsive layouts that adapt seamlessly to any screen size using Tailwind CSS and modern design principles.",
+  },
+  {
+    icon: <FaUniversalAccess size={30} className="text-orange-500" />,
+    title: "Accessibility Best Practices",
+    description:
+      "Writing semantic HTML, implementing ARIA roles, and ensuring websites are usable by everyone — including screen reader users.",
+  },
+  {
+    icon: <FaCode size={30} className="text-orange-500" />,
+    title: "HTML/CSS Site Layouts",
+    description:
+      "Structuring web content with clean HTML and styling it with modern CSS to create visually appealing and accessible pages.",
   },
   {
     icon: <FaBugSlash size={30} className="text-orange-500" />,
-    title: "Beginner-Level Bug Fixes",
+    title: "Debugging & Code Cleanup",
     description:
-      "Able to spot and fix simple HTML/CSS issues such as broken layouts, alignment problems, or incorrect tags.",
+      "Troubleshooting layout issues, fixing broken components, and optimizing code for readability and performance.",
   },
 ];
+
 
 const Services = () => {
   return (
@@ -47,7 +75,7 @@ const Services = () => {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center space-y-4 border-t-4 border-orange-500"
+              className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center space-y-4 border-t-4 border-orange-500 transform transition-transform duration-300 hover:scale-105 cursor-pointer"
              initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}

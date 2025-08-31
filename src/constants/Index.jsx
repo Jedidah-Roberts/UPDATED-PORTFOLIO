@@ -2,6 +2,11 @@ import React from 'react'
 
 const Index = {
     NAVBAR:[
+        {
+            text: "PROJECTS",
+            path:"/projects",
+        
+        },
         
         {
             text: "ABOUT",
@@ -20,11 +25,7 @@ const Index = {
             path:"/services",
         
         },
-        {
-            text: "PROJECTS",
-            path:"/projects",
         
-        },
         {
             text: "CONTACT",
             path:"/contact",

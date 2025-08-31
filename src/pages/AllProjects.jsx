@@ -1,40 +1,45 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import codefeast from "../assets/codefeast.png"
+import careerlaunch from "../assets/careerlaunch.png"
+import portfolio from "../assets/portfolio.png"
 
 const projects = [
   {
-    title: "ROBERTS SISTERS GLAM",
+    title: "CODEFEAST",
     description:
-      "A clean page built using HTML and CSS — perfect for a small startup makeup online marketplace.",
-    image: "/images/robertsglam.jpg", // Screenshot or thumbnail (host locally or use URL)
-    github: "https://github.com/Jedidah-Roberts/cprojects",
-    live: "https://robertsglam.netlify.app/",
+      "An advertisement platform that showcases different recipes worked on from dworld-class chefs from all over the world. All recipees can be accesssed with a single subscription.Built using React and Tailwind strictly",
+    image: codefeast,
+    github: "https://github.com/Jedidah-Roberts/advert-project",
+    live: "https://code-feast.netlify.app/",
   },
+  {
+    title: "CAREERLAUNCH",
+    description:
+      "An app that simulates the actual working environment providing experiences from the working environment experienced from the comfort of your home . Built using React and Tailwind strictly",
+    image: careerlaunch,
+    github: "https://github.com/Jedidah-Roberts/job-simulation",
+    live: "https://careerlaunchdev.netlify.app/",
+  },
+  
   {
     title: "MY PERSONAL PORTFOLIO",
     description:
-      "A clean landing page built using HTML and CSS — transforming structure into a usable portfolio tool.",
-    image: "/images/portfolio.jpg",
-    github: "https://github.com/Jedidah-Roberts/PROJECT-PORTFOLIO",
-    live: "https://jedidahrobertsdev.netlify.app/",
+      "A clean website page built using React and Tailwind CSS, showcasing my works and experiences as a junior web developer.",
+    image: portfolio,
+    github: "https://github.com/Jedidah-Roberts/UPDATED-PORTFOLIO",
+    live: "https://jedidahportfoliodev.netlify.app/",
   },
-  {
-    title: "CODEFEAST",
-    description:
-      "An advertisement platform that showcases different recipes worked on .",
-    image: "/images/portfolio.jpg",
-    github: "https://github.com/Jedidah-Roberts/PROJECT-PORTFOLIO",
-    live: "https://jedidahrobertsdev.netlify.app/",
-  },
+  
 
 ];
 
 const AllProjects = () => {
   return (
-    <section id="project-section" className="bg-white py-16 px-6 min-h-screen">
+    <section id="project-section" className="bg-gray-50 py-16 px-6 min-h-screen">
       <div className="max-w-6xl mx-auto space-y-12">
 
-        {/* Title */}
+       
         <motion.h2
           className="text-center text-4xl md:text-5xl font-extrabold text-gray-800"
           initial={{ opacity: 0, x: -30 }}
@@ -44,7 +49,7 @@ const AllProjects = () => {
           Featured <span className="text-orange-600">Projects</span>
         </motion.h2>
 
-        {/* Projects Grid */}
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {projects.map((project, index) => (
             <motion.div
@@ -66,7 +71,7 @@ const AllProjects = () => {
                 <h3 className="text-2xl font-semibold text-gray-800 mb-2">{project.title}</h3>
                 <p className="text-gray-600 text-sm mb-4">{project.description}</p>
 
-                {/* Links */}
+                
                 <div className="flex space-x-4">
                   <a
                     href={project.github}

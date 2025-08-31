@@ -10,7 +10,7 @@ import {
 
 const Contact = () => {
   return (
-    <section id="contact" className="bg-gray-50 py-16 px-6 min-h-screen font-sans">
+    <section id="contact" className="bg-white py-16 px-6 min-h-screen font-sans">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         
         
@@ -71,7 +71,7 @@ const Contact = () => {
 
         
         <motion.div
-          className="bg-white p-6 rounded-lg shadow-lg"
+          className="bg-gray-50 p-6 rounded-lg shadow-lg"
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}

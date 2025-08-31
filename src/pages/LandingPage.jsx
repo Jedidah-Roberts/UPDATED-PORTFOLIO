@@ -17,7 +17,7 @@ const LandingPage = () => {
       <Experience/>
       <Skills/>
       <Services/>
-     <Contact/>
+      <Contact/>
       <Footer/>
 
 

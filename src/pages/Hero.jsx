@@ -20,7 +20,7 @@ const Hero = () => {
           <p className="text-orange-500 font-semibold text-sm uppercase tracking-widest">
             Junior Frontend Developer
           </p>
-          <p className="text-white text-md">A Code Novice on a Quest</p>
+          
           <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
             Every Expert Was Once a Novice.
             <br />
@@ -35,14 +35,14 @@ const Hero = () => {
           transition={{ duration: 0.7 }}
         >
           <a
-            href="/assets/JEDIDAH'S CV.docx"
-            download
+            href="/Jedidah_CV.pdf"
+            // download
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-orange-500 text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-orange-600 transition"
           >
-            DOWNLOAD MY RESUME
-            <FaDownload />
+            VIEW MY RESUME
+            {/* <FaDownload /> */}
           </a>
         </motion.div>
       </div>
