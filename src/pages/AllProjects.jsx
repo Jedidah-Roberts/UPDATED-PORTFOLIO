@@ -18,6 +18,15 @@ const projects = [
     github: "https://github.com/Jedidah-Roberts/PROJECT-PORTFOLIO",
     live: "https://jedidahrobertsdev.netlify.app/",
   },
+  {
+    title: "CODEFEAST",
+    description:
+      "An advertisement platform that showcases different recipes worked on .",
+    image: "/images/portfolio.jpg",
+    github: "https://github.com/Jedidah-Roberts/PROJECT-PORTFOLIO",
+    live: "https://jedidahrobertsdev.netlify.app/",
+  },
+
 ];
 
 const AllProjects = () => {

@@ -12,12 +12,12 @@ const LandingPage = () => {
   return (
     <div>
       <Hero/>
+       <AllProjects/>
       <About/>
       <Experience/>
       <Skills/>
       <Services/>
-      <AllProjects/>
-      <Contact/>
+     <Contact/>
       <Footer/>
 
 
