@@ -7,12 +7,43 @@ import {
   FaFacebook,
   FaInstagram,
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const Contact = () => {
+  const navigate = useNavigate();
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    const response = await fetch("https://formspree.io/f/mzzagegk", {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    setSubmitting(false);
+
+    if (response.ok) {
+      form.reset();
+      navigate("/thank-you"); // Redirect manually
+    } else {
+      alert("Oops! Something went wrong. Please try again.");
+    }
+  };
+
   return (
     <section id="contact" className="bg-white py-16 px-6 min-h-screen font-sans">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         
+        {/* Contact Details */}
         <motion.div
           className="space-y-6"
           initial={{ opacity: 0, x: -30 }}
@@ -67,22 +98,14 @@ const Contact = () => {
           </div>
         </motion.div>
 
+        {/* Contact Form */}
         <motion.div
           className="bg-gray-50 p-6 rounded-lg shadow-lg"
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <form
-            name="contact"
-  method="POST"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
-  className="space-y-4"
-          >
-            <input type="hidden" name="form-name" value="contact" />
-            <input type="hidden" name="redirect" value="/thank-you" />
-
+          <form onSubmit={handleSubmit} className="space-y-4">
             <input
               type="text"
               name="name"
@@ -106,9 +129,10 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
+              disabled={submitting}
               className="bg-orange-500 text-white px-6 py-2 rounded-md hover:bg-orange-600 transition"
             >
-              Send Me A Message
+              {submitting ? "Sending..." : "Send Me A Message"}
             </button>
           </form>
         </motion.div>
