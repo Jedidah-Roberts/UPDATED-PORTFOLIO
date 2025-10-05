@@ -7,7 +7,7 @@ const About = () => {
     <section className="bg-white pt-10 pb-16 px-6 min-h-screen font-sans flex items-center">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-14">
 
-        {/* Image Section */}
+        
         <motion.div
           className="md:w-1/2"
           initial={{ opacity: 0, y: -30 }}
@@ -21,7 +21,7 @@ const About = () => {
           />
         </motion.div>
 
-        {/* Text Section */}
+        
         <motion.div
           className="md:w-1/2"
           initial={{ opacity: 0, y: -30 }}
@@ -29,7 +29,7 @@ const About = () => {
           transition={{ duration: 0.7 }}
         >
           <h4 className="text-orange-400 uppercase font-semibold tracking-widest text-sm mb-2">
-            My Story
+            My Learning Journal
           </h4>
           <h2 className="text-4xl font-bold text-gray-900 mb-6 leading-tight">
             A Junior Front-End Developer With Drive
